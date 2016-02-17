@@ -180,4 +180,17 @@ header .header_content {
   h1 {
     text-align: center;
   }
+
+  .navbar-nav .open .dropdown-menu {
+  	background-color: #fff;
+  }
+
+  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+  	color: paleturquoise;
+  }
+
+  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:active {
+  	background-color: blueviolet;
+  }
 }
