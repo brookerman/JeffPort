@@ -13,3 +13,171 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background-color: blueviolet;
+}
+    
+h1, h2, h3, p, td, th, a {
+  font-family: Verdana, sans-serif;
+  font-size: 1.5rem;
+  color: #FFF;
+  text-decoration: none;
+}
+
+h1 {
+  color: #949A9C;
+  display: inline-block;
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 0;  
+}
+
+header {
+	margin: 0 auto;
+	max-width: 700px;
+}
+
+.navbar {
+	color: #ffffff;
+	margin-bottom: -20px;
+}
+
+.navbar-inverse {
+	background-color: blueviolet;
+	border-color: #64CCED;
+}
+
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:focus, 
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.open>a, 
+.navbar-inverse .navbar-nav>.open>a:focus, 
+.navbar-inverse .navbar-nav>.open>a:hover {
+	background-color: blueviolet; 
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #fff;
+}
+
+.name {
+  color: #64CCED;
+  font-size: 4rem;
+  padding-right: 2rem;
+  text-align: left;
+  text-shadow: -1px 1px 1px #9f9f9f;
+}
+
+.wrapper {
+  left: 0px;
+  min-height: 600px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+.content {
+  background-color: white;
+  border-bottom: solid #64CCED 3px;
+  border-top: solid #64cced 3px;
+  box-shadow: -1px 1px 3px #9f9f9f;
+  min-height: 400px;
+  margin: 2rem 0;
+  padding: 2rem;
+  position: relative;
+}
+
+.under-construction-box {
+  background-color: #E38D36;
+  border: solid #CC6600 3px;
+  border-radius: 6px;
+  box-shadow: -1px 1px 3px #9f9f9f;
+  height: auto;
+  margin: 2rem auto;
+  max-width: 355px;
+  min-width: 173px;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+a.portfolio_link {
+  background: white;
+  border: #CC6600 3px solid;
+  border-radius: 4px;  
+  color: #CC6600;
+  font-weight: bold;
+  left: 0;
+  padding: 0.5rem;
+  position: absolute;
+  top: 140px;
+  width: 100%;
+}
+
+a.portfolio_link:hover, a.portfolio_link:focus, a.portfolio_link:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background: gainsboro;
+  color: #F556F4;
+  text-decoration: none;
+}
+
+
+a.portfolio_link:hover {
+  background: gainsboro;
+  color: #F556F4;
+}
+
+#apDiv2 {
+  height: 24px;
+  left: 217px;
+  position: relative;
+  top: 351px;
+  width: 312px;
+  z-index: 3;
+}
+
+
+img {
+  margin: 0 auto;
+  width: 50%;
+}
+
+section {
+  background-color: white;
+  max-width: 960px;
+}
+
+.thumbs-wrap {
+  background-color: paleturquoise;
+  padding: 1em;
+}
+
+header .header_content {
+  font-size: 2rem;
+  margin:  0 auto;
+  max-width: 960px;
+  position: relative;
+}
+
+@media only screen and (max-width: 500px) {
+    
+  p, .email_link {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    text-align: center;
+  }
+}
