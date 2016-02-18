@@ -186,7 +186,8 @@ header .header_content {
   }
 
   .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-  	color: paleturquoise;
+  	background-color: gainsboro;
+  	color: blueviolet;
   }
 
   .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover,
