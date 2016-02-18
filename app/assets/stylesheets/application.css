@@ -21,6 +21,7 @@ h1, h2, h3, p, td, th, a {
   font-family: Verdana, sans-serif;
   font-size: 1.5rem;
   color: #FFF;
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -42,6 +43,10 @@ header {
 	margin-bottom: -20px;
 }
 
+.navbar-nav {
+
+	width: 100%;
+}
 .navbar-inverse {
 	background-color: blueviolet;
 	border-color: #64CCED;
@@ -60,12 +65,21 @@ header {
 	color: #fff;
 }
 
+.nav>li>a {
+	display: inline-block;
+}
+
 .name {
   color: #64CCED;
   font-size: 4rem;
   padding-right: 2rem;
   text-align: left;
   text-shadow: -1px 1px 1px #9f9f9f;
+  width: 264px;
+}
+
+.name2 {
+	width: 210px;
 }
 
 .wrapper {
@@ -146,10 +160,21 @@ a.portfolio_link:hover {
   z-index: 3;
 }
 
+.dropdown-menu {
+	left: 32px;
+}
 
-img {
-  margin: 0 auto;
-  width: 50%;
+.turtle {
+  border: solid 3px blueviolet;
+  border-radius: 100px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 1rem;
+  width: 50px;
+  position: relative;
+  top: -1rem;
+  display: inline-block;
 }
 
 section {
@@ -169,16 +194,41 @@ header .header_content {
   position: relative;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 588px) {
     
   p, .email_link {
     font-size: 1.1rem;
   }
+
+  .turtle {
+  	width: 100px;
+  	text-align: center;
+  }
+
+  .under-construction-box {
+  	margin: 1rem auto 3rem;
+  }
+
+  a.portfolio_link {
+  	top: 126px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  h1 {
-    text-align: center;
+ p {
+ 	width: 100%;
+ }
+
+  .name,
+  .name2 {
+  	text-align: center;
+  	width: 100%;
+  }
+
+  .turtle {
+  	display: block;
+  	margin: 0 auto;
+  	width: 100px;
   }
 
   .navbar-nav .open .dropdown-menu {
