@@ -14,7 +14,7 @@
  *= require_self
  */
 body {
-  background-color: blueviolet;
+  background-color: #4C50A9;
 }
     
 h1, h2, h3, p, td, th, a {
@@ -23,6 +23,10 @@ h1, h2, h3, p, td, th, a {
   color: #FFF;
   display: inline-block;
   text-decoration: none;
+}
+
+section {
+	margin: 1rem auto;
 }
 
 h1 {
@@ -48,7 +52,7 @@ header {
 	width: 100%;
 }
 .navbar-inverse {
-	background-color: blueviolet;
+	background-color: #4C50A9;
 	border-color: #64CCED;
 }
 
@@ -58,7 +62,7 @@ header {
 .navbar-inverse .navbar-nav>.open>a, 
 .navbar-inverse .navbar-nav>.open>a:focus, 
 .navbar-inverse .navbar-nav>.open>a:hover {
-	background-color: blueviolet; 
+	background-color: #4C50A9; 
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -72,7 +76,6 @@ header {
 .name {
   color: #64CCED;
   font-size: 4rem;
-  padding-right: 2rem;
   text-align: left;
   text-shadow: -1px 1px 1px #9f9f9f;
   width: 264px;
@@ -107,6 +110,7 @@ header {
   border: solid #CC6600 3px;
   border-radius: 6px;
   box-shadow: -1px 1px 3px #9f9f9f;
+  display: none;
   height: auto;
   margin: 2rem auto;
   max-width: 355px;
@@ -237,11 +241,14 @@ header .header_content {
 
   .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
   	background-color: gainsboro;
-  	color: blueviolet;
+  	color: #4C50A9;
   }
+	.navbar-nav .open .dropdown-menu {
+		margin-left: 3rem;
+	}
 
   .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:active {
-  	background-color: blueviolet;
+  	background-color: #4C50A9;
   }
 }
