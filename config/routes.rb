@@ -1,13 +1,19 @@
 Rails.application.routes.draw do
   resources :widgets
-
+  resources :pages
+  resources :welcome
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
 
   root 'welcome#jeffBrookerSplash'
-  resources :welcome
+  
+  get "pages/:portfolio" => "pages#show"
+  get "pages/:about" => "pages#show"
+  get "pages/:contact" => "pages#show"
+  
+
 
   # Example of regular route:
   # get 'products/:id' => 'catalog#view'
