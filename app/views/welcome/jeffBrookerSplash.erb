@@ -1,29 +1,27 @@
-<div class="wrapper">
-	<div class="content">
-		<header>
-			<img class="turtle" src="<%= asset_path('turtle.png') %>">
-			<h1 class="name">Jeff Brooker</h1>
-			<h1 class="name2">UX Designer Developer</h1>
-		</header>
+<header>
+	<img class="turtle" src="<%= asset_path('turtle.png') %>">
+	<h1 class="name">Jeff Brooker</h1>
+	<h1 class="name2">UX Designer Developer</h1>
+</header>
 
-		<div class="under-construction-box">
-			<p>This site is currently under construction.</p>
-			<p>Email: <a href="mailto:brookerman17@gmail.com" class="email_link">brookerman17@gmail.com</a></p>
-			<p>Phone: 619.384.1023</p>
-			<a class="portfolio_link" href="#Brooker_Portfolio_March2010.pdf">My Portfolio</a>
-		</div><!-- /END UNDER_CONSTRUCTION_BOX DIV -->
-		<section>
-			<div class="dk-purple" style="width: 100%; height: 100px; background-color: blueviolet;">
-			</div>
-		</section>
-		<section>
-			<div class="beige" style="width: 100%; height: 100px; background-color: #C7B8C3;">
-			</div>
-		<section>
-			<div class="green" style="width: 100%; height: 100px; background-color: #418F24;">
-				<%= link_to 'Contact Me!', :controller => pages_path %>
-			</div>
-		</section>
-	</div><!-- /END CONTENT DIV -->
-</div><!-- /END WRAPPER DIV -->
+<div class="under-construction-box">
+	<p>This site is currently under construction.</p>
+	<p>Email: <a href="mailto:brookerman17@gmail.com" class="email_link">brookerman17@gmail.com</a></p>
+	<p>Phone: 619.384.1023</p>
+	<a class="portfolio_link" href="#Brooker_Portfolio_March2010.pdf">My Portfolio</a>
+</div><!-- /END UNDER_CONSTRUCTION_BOX DIV -->
+<section>
+	<div class="color-box dk-purple">
+		<%= link_to 'Work', :controller => pages_path %>
+	</div>
+</section>
+<section>
+	<div class="color-box beige">
+		<%= link_to 'About', :controller => pages_path %>
+	</div>
+<section>
+	<div class="color-box green">
+		<%= link_to 'Contact', :controller => pages_path %>
+	</div>
+</section>
 

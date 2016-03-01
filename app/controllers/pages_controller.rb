@@ -1,7 +1,9 @@
 class PagesController < ApplicationController
+	def index
+		render template: "welcome/jeffBrookerSplash"
+	end
+
 	def show
-		render template: "pages/#{params[:portfolio]}"
-		render template: "pages/#{params[:about]}"
-		render template: "pages/#{params[:contact]}"
+		render template: "pages/#{params[:page]}"
 	end
 end

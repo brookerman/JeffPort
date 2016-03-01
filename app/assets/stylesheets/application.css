@@ -155,6 +155,30 @@ a.portfolio_link:hover {
   color: #F556F4;
 }
 
+.color-box {
+  width: 100%;
+  height: 10vh;
+  margin: auto;
+  text-align: center;
+}
+
+.color-box a {
+	font-size: 10vw;
+	line-height: 7rem;
+}
+
+.dk-purple {
+	background-color: blueviolet;
+}
+
+.beige {
+	background-color: #C7B8C3;
+}
+
+.green {
+	background-color: #418F24;
+}
+
 #apDiv2 {
   height: 24px;
   left: 217px;
@@ -240,7 +264,6 @@ header .header_content {
   }
 
   .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-  	background-color: gainsboro;
   	color: #4C50A9;
   }
 	.navbar-nav .open .dropdown-menu {
