@@ -6,6 +6,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= stylesheet_link_tag  '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag    'custom', media: 'all' %>
     <%= javascript_include_tag  '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js' %>
     <%= csrf_meta_tags %>
   </head>
@@ -40,8 +41,11 @@
     </nav>
     <div class="wrapper">
       <div class="content">
+        <%= render 'layouts/header' %>
 
         <%= yield %>
+
+        <%= render 'layouts/colorBoxes' %>
 
       </div><!-- END CONTENT -->
     </div><!-- END WRAPPER -->

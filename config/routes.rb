@@ -2,16 +2,21 @@ Rails.application.routes.draw do
   resources :widgets
   
   resources :welcome
+  get '_header' => "welcome#header"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   
   resources :pages
-  get "/pages/:portfolio" => "pages#show"
+  get 'about' => "pages#about"
+  get 'contact' => "contacts#new"
+  get 'portfolio' => "pages#portfolio"
 
   # You can have the root of your site routed with "root"
   root 'welcome#jeffBrookerSplash'
 
+  match '/contacts',     to: 'contacts#new',             via: 'get'
+  resources "contacts", only: [:new, :create]
 
   # Example of regular route:
   # get 'products/:id' => 'catalog#view'

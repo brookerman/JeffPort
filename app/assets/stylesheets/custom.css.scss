@@ -1,0 +1,88 @@
+.hidden { display: none; }
+
+/*flash*/
+
+.alert-error {
+	background-color: #f2dede;
+	border-color: #eed3d7;
+	color: #b94a48;
+	text-align: left;
+}
+
+.alert-alert {
+	background-color: #f2dede;
+	border-color: #eed3d7;
+	color: #b94a48;
+	text-align: left;
+}
+
+.alert-success {
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+	color: #468847;
+	text-align: left;
+}
+
+.alert-notice {
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+	color: #468847;
+	text-align: left;
+}
+
+/* CONTACT FORM */
+
+.jb-contact-form {
+	margin: 0 auto;
+}
+
+/* EMAIL FORM */
+
+#email_form {
+	border: 1px solid #949A9C;
+	border-radius: 4px;
+	margin: 0 auto;
+	padding: 2rem 5rem;
+	width: 40%;
+}
+
+#email_form div.input {
+	margin: 1rem;
+}
+
+#email_form label {
+	color: #949A9C;
+	font-family: Verdana, sans-serif;
+	font-weight: 300;
+	margin-bottom: 0;
+	margin-left: 1rem; 
+	text-align: right;
+	vertical-align: top;
+	width: 20%;
+}
+
+abbr[title] {
+	border-bottom: none;
+}
+
+#email_form input,
+#email_form textarea {
+	border-radius: 4px;
+	margin-left: 2rem;
+	width: 60%;
+}
+
+#email_form .send_message {
+	background-color: #64CCED;
+	border: none;
+	margin-left: 0;
+	width: auto;
+}
+
+.form_heading {
+	color: #4C50A9;
+	font-family: Verdana, sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+	margin-top: 0;
+}
