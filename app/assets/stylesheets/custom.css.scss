@@ -39,11 +39,8 @@
 /* EMAIL FORM */
 
 #email_form {
-	border: 1px solid #949A9C;
-	border-radius: 4px;
-	margin: 0 auto;
-	padding: 2rem 5rem;
-	width: 40%;
+	margin: 4rem auto;
+	max-width: 685px;
 }
 
 #email_form div.input {
@@ -53,12 +50,21 @@
 #email_form label {
 	color: #949A9C;
 	font-family: Verdana, sans-serif;
+	font-size: 1.5rem;
 	font-weight: 300;
 	margin-bottom: 0;
 	margin-left: 1rem; 
-	text-align: right;
+	text-align: left;
 	vertical-align: top;
 	width: 20%;
+}
+
+abbr[title] {
+	display: none;
+}
+
+.jb_contact_message {
+	color: #949A9C;
 }
 
 abbr[title] {
@@ -85,4 +91,19 @@ abbr[title] {
 	font-size: 2rem;
 	font-weight: bold;
 	margin-top: 0;
+}
+
+@media only screen and (max-width: 588px) {
+    
+  #email_form label {
+    font-size: 1.1rem;
+  }
+
+  #email_form div.input {
+  	margin: 1rem 0;
+  }
+
+  .form_heading {
+  	text-align: center;
+  }
 }

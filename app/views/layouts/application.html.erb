@@ -11,7 +11,17 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-static-top navbar-inverse">
+    <div class="wrapper">
+      <div class="content">
+        <%= render 'layouts/header' %>
+
+        <%= yield %>
+
+        <%= render 'layouts/colorBoxes' %>
+
+      </div><!-- END CONTENT -->
+    </div><!-- END WRAPPER -->
+<!--    <footer class="navbar navbar-default navbar-static-top navbar-inverse">
       <div class="container">
         <ul class="nav navbar-nav">
           <li class="active">
@@ -38,16 +48,6 @@
           </li>
         </ul>
       </div>
-    </nav>
-    <div class="wrapper">
-      <div class="content">
-        <%= render 'layouts/header' %>
-
-        <%= yield %>
-
-        <%= render 'layouts/colorBoxes' %>
-
-      </div><!-- END CONTENT -->
-    </div><!-- END WRAPPER -->
+    </footer> -->
   </body>
 </html>

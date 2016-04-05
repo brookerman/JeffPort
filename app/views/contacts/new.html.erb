@@ -1,15 +1,17 @@
-<div id="email_form">
+<section id="email_form">
   <h3 class="form_heading">Send a message to Jeff!</h3>
-
-  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-    <%= f.input :name, :required => true %>
-    <%= f.input :email, :required => true %>
-    <%= f.input :message, :as => :text, :required => true %>
-    <div class= "hidden">
-      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
-    </div>
-    <div>
-      <%= f.button :submit, 'Send message', :class=> "send_message btn btn-primary", :label => true %>
-    </div>
-  <% end %>
-</div>
+  <div class="">
+    <p class="jb_contact_message">Questions? Comments? Send me an email!</br>Freelance inquiries will recieve a response within 23 1/2 hours.</p>
+    <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+      <%= f.input :name, :required => true %>
+      <%= f.input :email, :required => true %>
+      <%= f.input :message, :as => :text, :required => true %>
+      <div class= "hidden">
+        <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+      </div>
+      <div>
+        <%= f.button :submit, 'Send message', :class=> "send_message btn btn-primary", :label => true %>
+      </div>
+    <% end %>
+  </div>
+</section>
