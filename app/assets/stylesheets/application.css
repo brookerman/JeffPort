@@ -17,7 +17,7 @@ body {
   background-color: #4C50A9;
 }
 
-h1, h2, h3, p, td, th, a {
+h1, h2, h3, p, td, th {
   font-family: Verdana, sans-serif;
   font-size: 1.5rem;
   color: #FFF;
@@ -25,21 +25,45 @@ h1, h2, h3, p, td, th, a {
   text-decoration: none;
 }
 
+a {
+  font-family: Verdana, sans-serif;
+  font-size: 1.5rem;
+  color: #4C50A9;
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+};
+
 section {
 	margin: 1rem auto;
+  padding: 1rem;
+  background-color: white;
+  max-width: 960px;
 }
+
 
 h1 {
   color: #949A9C;
   display: inline-block;
   font-size: 18px;
   margin: 0 auto;
-  padding: 0;  
+  padding: 0;
 }
 
 header {
 	margin: 0 auto;
 	max-width: 700px;
+}
+
+.content-section {
+  padding: 1rem;
+}
+
+.content-section_title {
+  width: 100%;
 }
 
 .navbar {
@@ -83,10 +107,9 @@ header {
 
 .name {
   color: #64CCED;
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: left;
   text-shadow: -1px 1px 1px #9f9f9f;
-  width: 264px;
 }
 
 .name2 {
@@ -96,6 +119,7 @@ header {
 .wrapper {
   background-color: #ffffff;
   left: 0px;
+  padding: 2rem 0;
   position: relative;
   top: 0px;
   width: 100%;
@@ -207,11 +231,6 @@ a.portfolio_link:hover {
   display: inline-block;
 }
 
-section {
-  background-color: white;
-  max-width: 960px;
-}
-
 .thumbs-wrap {
   background-color: paleturquoise;
   padding: 1em;
@@ -224,10 +243,53 @@ header .header_content {
   position: relative;
 }
 
+.jb-internal-link-wrap {
+  background: #f5f5f5;
+  bottom: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: fixed;
+  width: 100%;
+}
+
+.jb-internal-link {
+  border: none;
+  background: none;
+  box-sizing: border-radius;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: #504f4f;
+  cursor: pointer;
+  -webkit-box-flex: 1 1 auto;
+  -moz-box-flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 2.3rem;
+  text-transform: uppercase;
+  transition: background 150ms, color 150ms;
+  -webkit-transition: background 150ms, color 150ms;
+  -moz-transition: background 150ms, color 150ms;
+}
+
+.jb-internal-link:hover, .active {
+  background-color: #64CCED;
+}
+
 @media only screen and (max-width: 588px) {
     
   p, .email_link {
     font-size: 1.1rem;
+  }
+
+  #email_form {
+    margin: 4rem;
+    text-align: center;
   }
 
   .turtle {
@@ -279,5 +341,19 @@ header .header_content {
 
   .header_home_link {
     display: block;
+  }
+
+  .jb-internal-link-wrap {
+    bottom: initial;
+    top: 0;
+  }
+
+  .jb-internal-link {
+    font-size: 0.8rem;
+    padding: 1.4rem;
+  }
+
+  .wrapper {
+    padding: 7rem 0 2rem 0;
   }
 }

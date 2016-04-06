@@ -1,4 +1,4 @@
-<section>
+<!-- <section>
 	<div class="color-box dk-purple">
 		<%= link_to 'About', about_path %>
 	</div>
@@ -12,4 +12,18 @@
 	<div class="color-box green">
 		<%= link_to 'Contact', contact_path %>
 	</div>
-</section>
+</section> -->
+
+<div class="jb-internal-link-wrap">
+  <button id="about" class="jb-internal-link">
+	  <%= link_to 'About', about_path %>
+	</button>
+
+  <button id="work" class="jb-internal-link">
+  	<%= link_to 'Work', portfolio_path %>
+  </button>
+
+  <button id="contact" class="jb-internal-link">
+  	<%= link_to 'Contact', contact_path %>
+  </button>
+</div>
